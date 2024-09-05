@@ -1,11 +1,100 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assingnment 3</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <style>
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+    <!-- daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'green-dark': '#ABEF5F',
+                        'green-light': '#ABEF5F80',
+                        'black': '#212121',
+                        'gray-dark': '#494949',
+                        'gray-light': '#737373'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- font-awsome cdn -->
+    <script src="https://kit.fontawesome.com/83442dc265.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
+    <header class="bg-gradient-to-br from-[#f7f7f7] to-[#f8f8f8]">
+        <!-- nav -->
+        <nav class="md:px-22 lg:px-32 ">
+           <div class="navbar">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h8m-8 6h16" />
+        </svg>
+      </div>
+      <ul
+        tabindex="0"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3  p-2 shadow">
+        <li><a>Home</a></li>
+      <li><a>Services</a></li>
+      <li><a>Portfolio</a></li>
+      <li><a>Blog</a></li>
+      <li><a>Contact Us</a></li>
+      </ul>
+    </div>
+    <a class="text-xl sm:text-3xl font-bold 
+    "><i class="fa-solid fa-arrow-up rotate-45 bg-green-dark px-1.5 py-1 rounded-full"></i> Rinterio</a>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1 text-gray-light font-semibold">
+      <li><a class="text-black">Home</a></li>
+      <li><a class="">Services</a></li>
+      <li><a class="">Portfolio</a></li>
+      <li><a class="">Blog</a></li>
+      <li><a class="">Contact Us</a></li>
+    </ul>
+  </div>
+  <div class="navbar-end space-x-7">
+        <div><i class="fa-solid fa-magnifying-glass invisible sm:visible"></i></div>
+        <div><i class="fa-solid fa-cart-shopping invisible sm:visible"></i></div>
+    <a class="btn bg-green-dark rounded-3xl sm:text-xl font-bold">Book Consult <i class="fa-solid fa-circle-arrow-up rotate-45"></i></a>
+  </div>
+</div>
+        </nav>
+        <!-- banner -->
+         <div class="flex flex-col items-center mx-5 space-y-6">
+            <img src="./assets/banner.png" alt="">
+            <h1 class="text-6xl font-bold">A barn house of this design has a <br> striking appearance</h1>
+            <p class="text-gray-light">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.</p>
+            <button class="btn bg-green-light rounded-3xl">View Details <i class="fa-solid fa-arrow-up rotate-45 bg-green-dark px-1.5 py-1 rounded-full"></i> </button>
+         </div>
+    </header>
 </body>
+
 </html>
