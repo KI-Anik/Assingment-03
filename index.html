@@ -16,6 +16,11 @@
     p{
       color: #494949;
     }
+    #discuss{
+      background-image:url(./assets/bg.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   </style>
   <!-- daisyUI -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -197,12 +202,35 @@
          </div>
 
          <!-- second card -->
-          <div class="p-5 border rounded-2xl ">
+          <div class="p-5 mx-auto border rounded-2xl ">
             <img src="./assets/img2.png" alt="">
           </div>
        </div>
      </section>
-  </main>
+
+     <!-- lets Connect -->
+      <section id="discuss" class="pt-20 pb-24">
+        <div class="space-y-6 text-center p-10">
+          <p class="inline px-6 py-3 bg-green-light rounded-full font-semibold"><i class="fa-solid fa-arrow-right "></i> Let’s Connect</p>
+          <h2 class="text-5xl font-bold">Let’s Discuss Next Project</h2>
+          <p class="">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
+         </div>
+
+         <!-- form -->
+        <form action="#" class="grid grid-cols-2 justify-items-center w-4/5 mx-auto gap-5">
+          <input class="input input-bordered input-md w-full " type="text" name="" id="" placeholder="First Name*" required>
+          <input class="input input-bordered input-md w-full " type="text" name="" id="" placeholder="Last Name*">
+          <input class="input input-bordered input-md w-full " type="text" name="" id="" placeholder="Phone Number*">
+          <input class="input input-bordered input-md w-full " type="text" name="" id="" placeholder="Email*">
+          <textarea class="col-span-2 textarea textarea-lg p-12 textarea-bordered w-full" name="" id="" placeholder="Write your message here"></textarea>
+        </form>
+        <div class="text-center mt-4 bg-green-dark w-4/5 mx-auto rounded-full p-2">
+          <button class="text-xl font-semibold">View Details</button> <i
+          class="fa-solid fa-arrow-up rotate-45 bg-black text-white px-1.5 py-1 rounded-full"></i>
+        </div>
+
+      </section>
+    </main>
 </body>
 
 </html>
